@@ -4,9 +4,11 @@ import os
 site = "https://dvmn.org/referrals/zQu8DE2BQc416VQUX2ZzGcJYXgrJgGQvX87L5UMo/"
 friends_name = "Марина"
 my_name = "Бершнев Марик"
+sender = "bershnev.marik@yandex.ru"
+addressee = "marpank@yandex.ru"
 
-letter = f"""From: bershnev.marik@yandex.ru
-To: marpank@yandex.ru
+letter = f"""From: {sender}
+To: {addressee}
 Subject: Приглашение!
 Content-Type: text/plain; charset="UTF-8";
 
