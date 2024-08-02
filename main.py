@@ -4,11 +4,11 @@ import os
 site = "https://dvmn.org/referrals/zQu8DE2BQc416VQUX2ZzGcJYXgrJgGQvX87L5UMo/"
 friends_name = "Марина"
 my_name = "Бершнев Марик"
-sender = "bershnev.marik@yandex.ru"
-addressee = "marpank@yandex.ru"
+sender_email = "bershnev.marik@yandex.ru"
+recipient_email = "marpank@yandex.ru"
 
-letter = f"""From: {sender}
-To: {addressee}
+letter = f"""From: {sender_email}
+To: {recipient_email}
 Subject: Приглашение!
 Content-Type: text/plain; charset="UTF-8";
 
@@ -35,5 +35,5 @@ my_login = os.environ['YA_LOGIN']
 my_password = os.environ['YA_PASSWORD']
 server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
 server.login(my_login, my_password)
-server.sendmail("bershnev.marik@yandex.ru", "marpank@yandex.ru", letter)
+server.sendmail(sender_email, recipient_email, letter)
 server.quit()
